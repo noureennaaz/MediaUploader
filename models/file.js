@@ -20,9 +20,6 @@ const Fileschema = new mongoose.Schema({
   },
 });
 
-// async function Sendmail(email, imgurl){
-//   await MailSender();
-// }
 Fileschema.post("save", async function (doc) {
   
   console.log("info ---->>>>", doc.email , doc.imgurl)
