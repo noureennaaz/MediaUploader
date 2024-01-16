@@ -1,6 +1,7 @@
 const File = require("../models/file");
 const cloudinary = require("cloudinary").v2;
 
+
 exports.fileupload = async (req, res) => {
   
   try{
@@ -145,3 +146,4 @@ exports.compressImageUpload = async (req, res) => {
     imgurl: response.secure_url,
   });
 };
+
